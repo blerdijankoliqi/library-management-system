@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="header-title-div">
+        <h1 class="header-title">Library of GJ.K.S. - Ostros</h1>
+    </div>
+
+    <div class="form-div">
+        <form action="" method="post">
+
+            <div class="username-div">
+                <input id="username-field" type="text" placeholder="Username">
+            </div>
+            
+            <div class="password-div">
+                <input id="password-field" type="password" placeholder="Password">
+            </div>
+            
+            <div class="submit-div">
+                <button id="login-button" type="submit">LOGIN</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="quote-div">
+        <p class="quote">“There is more treasure in books than in all the pirate’s loot on Treasure Island.” - <span style="font-family: Sora-Bold">Walt Disney</span></p>
+    </div>
+
+    <div class="made-by-div">
+        <p class="made-by">Made by <a class="made-by-name" href="https://www.linkedin.com/in/blerdijankolic/">Blerdijan</a></p>
+    </div>
+
+</body>
+<script src="{% static 'js/app.js' %}"></script>
+</html>

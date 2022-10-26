@@ -1,0 +1,173 @@
+/* sora-regular - latin */
+@font-face {
+    font-family: 'Sora-Regular';
+    src: url(font/Sora-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Sora-Bold';
+    src: url(font/Sora-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Sora-Light';
+    src: url(font/Sora-Light.ttf);
+}
+
+
+/* ------------- DESKTOP STYLE ----------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #31325A;
+}
+
+.header-title-div {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    color: white;
+    font-family: Sora-Regular;
+    font-size: 65px;
+
+}
+
+.form-div {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.username-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.submit-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#username-field {
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    color: #31325A;
+    font-family: Sora-Regular;
+    font-size: large;
+}
+
+#password-field {
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    color: #31325A;
+    font-family: Sora-Regular;
+    font-size: large;
+}
+
+#login-button {
+    font-family: Sora-Regular;
+    font-size: 25px;
+    color: white;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.quote-div {
+    height: 5vh;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.quote {
+    color: white;
+    font-family: Sora-Regular;
+    font-size: 20px;
+}
+
+.made-by-div {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.made-by {
+    color: white;
+    text-decoration: none;
+    font-family: Sora-Regular;
+    padding-bottom: 10px;
+}
+
+.made-by-name {
+    text-decoration: none;
+    color: white;
+    font-family: Sora-Bold;
+}
+
+
+/* ------------- MOBILE STYLE ----------------- */
+
+@media screen and (max-width: 900px) and (min-width: 550px) {
+    .header-title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .header-title {
+        font-size: 20px;
+    }
+
+    .quote,
+    .made-by {
+        font-size: 15px;
+    }
+
+    #username-field,
+    #password-field {
+
+        height: 40px;
+        width: 200px;
+        font-size: 15px;
+
+    }
+}
