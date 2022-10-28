@@ -1,12 +1,46 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Base</title>
 </head>
-<body>
-   <h1>Base</h1> 
+<body style="background-color: #C1C2CF;">
+    <div id="mySidebar" class="sidebar">
+        <div class="up-part">
+            <a href="javascript:void(0)" class="closebtn" onclick="openNav()">&times;</a>
+            <a href="/dashboard/">Dashboard</a>
+            <a href="#">Students</a>
+            <a href="#">Books</a>
+            <a href="#">Rentings</a>  
+        </div>
+        <div class="down-part">
+            <a href="/">Logout</a>
+        </div>
+      </div>
+      
+      <div id="main">
+        <div class="top-bar">
+            <div id="menu-bar" class="menu-bar">
+                <button id="openbtn" class="openbtn" onclick="openNav()">Menu</button>
+            </div>
+            <div class="search-bar">
+                <!-- The form -->
+                <form class="example">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+    </div>
+
+    {% block content %}
+    <!-- THE MAGIC HAPPENS HERE -->
+    {% endblock content %}
+      </div>
 </body>
+<script src="{% static 'js/base.js' %}"></script>
 </html>
