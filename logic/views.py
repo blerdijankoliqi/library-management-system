@@ -5,6 +5,9 @@ from .models import Student
 def renderLoginPage(request):
     return render(request, 'login.html')
 
-def renderDashboardPage(request):
+def renderBasePage(request):
     return render(request, 'base.html')
+
+def renderDashboardPage(request):
+    return render(request, 'dashboard.html')
 

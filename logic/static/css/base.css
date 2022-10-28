@@ -1,0 +1,153 @@
+/* sora-regular - latin */
+@font-face {
+    font-family: 'Sora-Regular';
+    src: url(font/Sora-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Sora-Bold';
+    src: url(font/Sora-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Sora-Light';
+    src: url(font/Sora-Light.ttf);
+}
+
+.sidebar {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #31325A;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: Sora-Regular;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #C1C2CF;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.down-part {
+    margin-top: 55vh;
+}
+
+/* The button used to open the sidebar */
+.openbtn,
+.search-btn {
+    font-size: 20px;
+    height: 50px;
+    font-family: Sora-Regular;
+    cursor: pointer;
+    background-color: #31325A;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    color: #C1C2CF;
+}
+
+.top-bar {
+    width: 100%;
+    display: flex;
+}
+
+.menu-bar {
+    margin-right: 10px;
+}
+
+.search-bar {
+    width: 100%;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #31325A;
+    float: left;
+    width: 75%;
+    background: #f1f1f1;
+    height: 28px;
+    color: #31325A;
+    font-family: Sora-Regular;
+    font-size: large;
+
+}
+
+/* Style the submit button */
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #31325A;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.example button:hover {
+    color: #C1C2CF;
+}
+
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    /* If you want a transition effect */
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
